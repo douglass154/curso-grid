@@ -1,0 +1,64 @@
+
+                                                           ==  AUTO-FILL & AUTO-FIT  ==
+
+
+---> Auto-fill
+
+• auto-fill significa "preencha automaticamente".
+
+• exemplo de uso:
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-auto-rows: 70px;
+  grid-gap: 10px;
+}
+
+::: Se o comando falasse, seria assim:
+
+• Linha 1: "Nessa div chamada grid, quero que ela se comporte na tela/display como uma grid";
+
+• Linha 2: "Preencha automaticamente TODO O ESPAÇO DO TEMPLATE DAS COLUNAS os valores entre    50px e 1fr ";
+
+• Linha 3: "As linhas da grid que não foram especificadas (todas) terão uma altura de 70px".
+
+• Linha 4: "Defina um espaçamento de 10px entre cada coluna e cada linha".
+
+
+
+---> Auto-fit
+
+• Sua tradução é "ajuste automaticamente".
+
+O auto-fit é quase a mesma coisa que o seu irmão auto-fill. Ele também preenche todo o espaço do template das colunas. A diferença é que ele pega os espaços invisíveis e "destrói", ou seja, na prática ele pega os espaços não alocados e coloca uma largura de 0px pra eles.
+
+
+• exemplo de código:
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-auto-rows: 70px;
+  grid-gap: 10px;
+}
+
+
+::: O auto-fit é para aqueles projetos que você não se importa tanto com a largura da coluna, mas quer que ela fique responsiva e ocupe a tela toda.
+
+
+::: Já o auto-fill exige mais do desenvolvedor em termos de cálculo. Você vai precisar calcular de forma precisa se não quiser ter os espaços não alocados. Porém, a grande vantagem é que as colunas sempre ficam mais ou menos naquele tamanho. Há projetos que exigem isso.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
