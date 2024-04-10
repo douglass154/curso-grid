@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+
+    grid-template-columns: minmax(200px, 20%) 200px 200px;
+    grid-auto-rows: 200px;
+    gap: 10px;
+}
+
+.grid-container div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container div:nth-child(even) {
+    background-color: rgb(74, 167, 255);
+}
+
+.grid-container div:nth-child(odd) {
+    background-color: rgba(74, 249, 255, 0.589);
+}
